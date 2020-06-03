@@ -1,0 +1,9 @@
+ &DOS
+                      outdir = './' ,
+                      prefix = 'si' ,
+	 	      fildos = 'si.dos' ,
+		        Emin = -9.0 ,
+		        Emax = 16.0 ,
+ /
+ 
+
