@@ -1,0 +1,5 @@
+ &Bands
+                      outdir = './' ,
+                      prefix = 'si' ,
+		     filband = 'si.bands', 
+ /

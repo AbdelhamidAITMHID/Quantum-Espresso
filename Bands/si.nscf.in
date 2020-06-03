@@ -1,0 +1,34 @@
+ &CONTROL
+                 calculation = 'bands' ,
+                restart_mode = 'from_scratch' ,
+                      outdir = './' ,
+                  pseudo_dir = './' ,
+                      prefix = 'si' ,
+ /
+ &SYSTEM
+                       ibrav = 2,
+                   celldm(1) = 10.2625,
+                         nat = 2,
+                        ntyp = 1,
+                     ecutwfc = 60.0 ,
+                     ecutrho = 720 ,
+                 occupations = 'smearing' ,
+                     degauss = 1.00000e-02 ,
+                    smearing = 'gaussian' ,
+ /
+ &ELECTRONS
+                    conv_thr = 1d-8 ,
+                 mixing_beta = 0.7 ,
+ /
+ATOMIC_SPECIES
+   Si   28.08550  Si.pbe-rrkj.UPF 
+ATOMIC_POSITIONS alat 
+   Si      0.000000000    0.000000000    0.000000000    
+   Si      0.250000000    0.250000000    0.250000000    
+K_POINTS crystal_b
+   5
+ 0.0000000000   0.0000000000   -0.5000000000  20
+ 0.0000000000   0.0000000000    0.0000000000  30
+-0.5000000000   0.0000000000   -0.5000000000  10
+-0.3750000000   0.0000000000   -0.6250000000  30
+ 0.0000000000   0.0000000000    0.0000000000  20
